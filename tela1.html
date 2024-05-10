@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="icon" type="image/png" href="./img/database.png">
+  <title>Database/busca</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><img id="logonav" src="./img/aguialogo.png" alt=""></a>
+              <h2>Bem vindo!</h2>
+              <ul class="nav-list">
+                <li><a href="./tela1.html">Início</a></li>
+                <li><a href="./tela1.html">Agentes</a></li>
+                <li><a href="./tela1.html">Regiões</a></li>
+                <li><a href="./tela1.html">Serviços</a></li>
+              </ul>
+            <form id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                <img src="./img/icons8-search-more-50.png" id="imgbusca">
+            </form>
+        </nav>
+    </header>
+    <main>
+      <aside>
+        <div class="formulario">
+          <img id="database" src="./img/database.png" alt="">
+          <form>
+            <div class="form-group">
+              <label for="regiao">Região</label>
+              <select id="regiao" name="regiao">
+                <option value="">Selecione uma região</option>
+                <option value="regiao2">Brasília/DF</option>
+                <option value="regiao2">Florianópolis/SC</option>
+                <option value="regiao3">Fortaleza/CE</option>
+                <option value="regiao4">Manaus/AM</option>
+                <option value="regiao5">Porto Alegre/RS</option>
+                <option value="regiao6">Recife/PE</option>
+                <option value="regiao7">Rio de Janeiro/RJ</option>
+                <option value="regiao8">Salvador/BA</option>
+                <option value="regiao9">São Paulo/SP</option>
+                <option value="regiao10">Belo Horizonte/MG</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="atuacao">Tipo de Atuação</label>
+              <select id="atuacao" name="atuacao">
+                <option value="">Tipo de atuação</option>
+                <option value="atuacao">Ativos Leves</option>
+                <option value="atuacao">Ativos Pesados</option>
+                <option value="atuacao">Guincho</option>
+                <option value="atuacao">Sindicância</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="placa">Placa:</label>
+              <input type="text" id="placa" name="placa" placeholder="Digite a placa">
+            </div>
+            <div class="form-group">
+              <label for="agente">Agente:</label>
+              <input type="text" id="agente" name="agente" placeholder="Digite o nome do agente">
+            </div>
+            <button type="submit">Consultar</button><br><br><br>
+            <a href="#"><img id="down" src="./img/icons8-baixar-48.png" alt=""></a>
+          </form>
+        </div>        
+      </aside>
+      <div class="table-1">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="7"><img src="./img/icons8-brasil-64.png" alt=""></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Agente</th>
+              <th>Região</th>
+              <th>Ativos Leves</th>
+              <th>Ativos Pesados</th>
+              <th>Guincho</th>
+              <th>Sindicância</th>
+              <th>Baixar</th>
+            </tr>
+            <tr>
+              <td>Alcides</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Não</td>
+              <td>Não</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Bruno</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Sim</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Charles</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>David</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Eduardo</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Felipe</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Não</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Gabriel</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Não</td>
+              <td>Sim</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Gustavo</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Henrique</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Sim</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Italo</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Jeferson</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Não</td>
+              <td>Não</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>João</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Leonardo</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Não</td>
+              <td>Não</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+            <tr>
+              <td>Matheus</td>
+              <td>São Paulo/SP</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td>Não</td>
+              <td>Não</td>
+              <td><a href="#"><img class="arquivoimg" src="./img/icons8-arquivo-50.png" alt=""></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <div id="video-background">
+      <video autoplay loop muted>
+        <source src="./video/connection_-_113367 (1080p) (1).mp4" type="video/mp4">
+      </video>
+    </div>
+</body>
+</html>
